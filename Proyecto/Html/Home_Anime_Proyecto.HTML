@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadatos básicos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <!-- Iconos Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <title>Document</title>
+
+    <!-- Hoja de estilos personalizada -->
+    <link rel="stylesheet" href="/Proyecto/Css/Header.css">
+    <link rel="stylesheet" href="/Proyecto/Css/Home_Anime_Proyecto1.CSS" />
+    <link rel="stylesheet" href="/Proyecto/Css/Home_Anime_Proyecto2.CSS" />
+
+</head>
+<body>
+    <button id="scrollToTop" class="scroll-top-btn"><i class='bx bx-up-arrow-circle'></i></button>
+    <!-- ========== Header principal ========== -->
+    <header id="Header">
+        <!-- Logo del header -->
+        <div class="HEADER_LOGO">
+            <a href="">
+                <img src="/Multimedias/Logos/Group 75.png" draggable="false" alt="RESONANCE_OF_THE_FALLEN_DOMAINS" />
+            </a>
+        </div>
+
+        <!-- Botón menú hamburguesa (visible en móvil) -->
+        <button id="Boton_Menu"><i class="bx bx-menu"></i></button>
+
+        <!-- Navegación principal -->
+        <div id="Gradient">
+            <nav class="Nav" id="Nav">
+                <!-- Botón cerrar menú hamburguesa -->
+                <button id="Cerrar_Menu"><i class="bx bx-x"></i></button>
+
+                <!-- Área login visible solo en menú desplegable móvil -->
+                <div class="HEADER_LOG2">
+                    <p>
+                        <a class="HEADER_LG" draggable="false" href="momo" >Log In</a> |
+                        <a href="momo" draggable="false">Sign In</a>
+                    </p>
+                </div>
+
+                <!-- Menú principal -->
+                <ul class="Menu">
+
+                    <!-- Opción Home con submenú -->
+                    <li class="Option-Menu">
+                        <a href="#" id="Home" draggable="false">
+                            Home
+                            <i class="bx bx-caret-up"></i>
+                            <i class="bx bx-caret-down"></i>
+                        </a>
+                        <ul class="Sup-Menu">
+                            <li class="Option-Menu"><a href="#BODY_HOME_VIDEO" draggable="false"><i class='bx bx-pulse' ></i>  First</a></li>
+                            <li class="Option-Menu"><a href="#BODY_HOME_GALERY" draggable="false"><i class='bx bx-pulse' ></i> Gallery</a></li>
+                            <li class="Option-Menu"><a href="#BODY_HOME_PARENERS" draggable="false"><i class='bx bx-pulse' ></i> Partners</a></li>
+                            <li class="Option-Menu"><a href="#BODY_HOME_FOTTER" draggable="false"><i class='bx bx-pulse' ></i> Contacts</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Opción News sin submenú -->
+                    <li class="Option-Menu"><a href="News" id="News" draggable="false">News</a></li>
+
+                    <!-- Opción Characters con submenú -->
+                    <li class="Option-Menu">
+                        <a href="#" id="Characters" draggable="false">
+                            Characters
+                            <i class="bx bx-caret-up"></i>
+                            <i class="bx bx-caret-down"></i>
+                        </a>
+                        <ul class="Sup-Menu">
+                            <li class="Option-Menu"><a href="#" draggable="false"><i class='bx bx-pulse' ></i> Resistance</a></li>
+                            <li class="Option-Menu"><a href="#" draggable="false"><i class='bx bx-pulse' ></i> Villains</a></li>
+                            <li class="Option-Menu"><a href="#" draggable="false"><i class='bx bx-pulse' ></i> Districts</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Opción Shop con submenú y sub-submenús -->
+                    <li class="Option-Menu">
+                        <a href="#" id="Shop" draggable="false">
+                            Shop
+                            <i class="bx bx-caret-up"></i>
+                            <i class="bx bx-caret-down"></i>
+                        </a>
+                        <ul class="Sup-Menu">
+                            <li class="Option-Menu">
+                                <a href="#" draggable="false"><i class='bx bx-pulse' ></i> 
+                                    Collectible Figures
+                                    <i class="bx bx-caret-up"></i>
+                                    <i class="bx bx-caret-right"></i>
+                                </a>
+                                <ul class="Sup-Sup-Menu">
+                                    <li class="Option-Menu"><a href="#">Higher Price <i class="bx bx-trending-up"></i></a></li>
+                                    <li class="Option-Menu"><a href="#">Lowest Price <i class="bx bx-trending-down"></i></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="Option-Menu">
+                                <a href="#" draggable="false"><i class='bx bx-pulse' ></i>
+                                    Clothing & Accessories
+                                    <i class="bx bx-caret-up"></i>
+                                    <i class="bx bx-caret-right"></i>
+                                </a>
+                                <ul class="Sup-Sup-Menu">
+                                    <li class="Option-Menu"><a href="#" draggable="false">Higher Price <i class="bx bx-trending-up"></i></a></li>
+                                    <li class="Option-Menu"><a href="#" draggable="false">Lowest Price <i class="bx bx-trending-down"></i></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="Option-Menu">
+                                <a href="#" draggable="false"><i class='bx bx-pulse' ></i>
+                                    Stationery & School Supplies
+                                    <i class="bx bx-caret-up"></i>
+                                    <i class="bx bx-caret-right"></i>
+                                </a>
+                                <ul class="Sup-Sup-Menu">
+                                    <li class="Option-Menu"><a href="#" draggable="false">Higher Price <i class="bx bx-trending-up"></i></a></li>
+                                    <li class="Option-Menu"><a href="#" draggable="false">Lowest Price <i class="bx bx-trending-down"></i></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="Option-Menu">
+                                <a href="#" draggable="false"><i class='bx bx-pulse' ></i>
+                                    Posters & Art
+                                    <i class="bx bx-caret-up"></i>
+                                    <i class="bx bx-caret-right"></i>
+                                </a>
+                                <ul class="Sup-Sup-Menu">
+                                    <li class="Option-Menu"><a href="#" draggable="false">Higher Price <i class="bx bx-trending-up"></i></a></li>
+                                    <li class="Option-Menu"><a href="#" draggable="false">Lowest Price <i class="bx bx-trending-down"></i></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="Option-Menu">
+                                <a href="#" draggable="false"><i class='bx bx-pulse' ></i>
+                                    Manga & Light Novels
+                                    <i class="bx bx-caret-up"></i>
+                                    <i class="bx bx-caret-right"></i>
+                                </a>
+                                <ul class="Sup-Sup-Menu">
+                                    <li class="Option-Menu"><a href="#" draggable="false">Higher Price <i class="bx bx-trending-up"></i></a></li>
+                                    <li class="Option-Menu"><a href="#" draggable="false">Lowest Price <i class="bx bx-trending-down"></i></a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <!-- Opción Seasons sin submenú -->
+                    <li class="Option-Menu"><a href="https://www.netflix.com/co/" id="Seasons"  draggable="false">Seasons</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Área login visible en desktop -->
+        <div class="HEADER_LOG">
+            <p>
+                <a class="HEADER_LG" draggable="false" href="#">Log In</a> |
+                <a href="#" draggable="false">Sign In</a>
+            </p>
+        </div>
+    </header>
+    <!-- Sección principal de la página -->
+    <section id="BODY_HOME">
+        <!-- Contenedor principal con fondo e información dividida en dos columnas -->
+        <div class="BODY_HOME_INFO" placeholder="Enfócame">
+            <!-- Columna izquierda: texto e imágenes principales -->
+            <div class="INFO_LEFT">
+                <div>
+                    <!-- Logo principal (versión escritorio) -->
+                    <a href="#" class="INFO_LOG" draggable="false"><img class="HEADER_LOGO" src="/Multimedias/Logos/Group 6 (1).png" alt="Logo principal"></a>
+                    <!-- Logo alternativo para pantallas pequeñas -->
+                    <img class="LogoResonance" src="/Multimedias/Logos/Group 75.png" alt="Logo Resonance"> 
+                    <br>
+                    <!-- Título de la temporada -->
+                    <h1>
+                        <a href=""></a>Temporada 1: El Dominio del Sueño Eterno – Laila Yumekiri
+                    </h1>
+                    <!-- Detalles de la temporada -->
+                    <h4>
+                        <strong>2025</strong> | <strong>18+</strong> | 3 Episodios | <a href="">(JPN)</a> <a href="">(ING)</a> <a href="">(ESP)</a>
+                    </h4>
+                    <br>
+                    <!-- Sinopsis parte 1 -->
+                    <p>
+                        Laila fue una diplomática de élite y símbolo de paz mundial, hasta que la guerra lo arrasó todo. 
+                        Dotada con un poder único para alterar la realidad a través de emociones, su habilidad fue primero un arma… y luego, su condena.
+                    </p>
+                    <br>
+                    <!-- Sinopsis parte 2 -->
+                    <p>
+                        Corrompida por el caos que ayudó a desatar, Laila construyó el Dominio Tsukikage: un mundo distorsionado donde la lógica no rige, 
+                        la música domina y cada alma vive atrapada en su propia ilusión. Allí reina sola, omnipotente pero vacía, en medio de un concierto eterno.
+                    </p>
+                    <br><br>
+                    <!-- Botón de acción -->
+                    <button>Temporada 1</button>
+                </div>  
+            </div>
+
+            <!-- Columna derecha: imagen de personaje (sólo visible en pantallas grandes) -->
+            <div class="INFO_RIGTH">
+                <div>
+                    <img class="imagen" src="/Multimedias/Laila Yumekiri/Leonardo_Anime_XL_A_tall_elegant_woman_with_long_dark_blue_hai_1__1_-removebg-preview 2.png" alt="Laila Yumekiri">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="BODY_HOME_VIDEO" class="SECTION_VIDEO">
+        <div class="VIDEO">
+            <div class="CONT_VIDEO_TITLE">
+                <h1>TEASER</h1>
+            </div>
+            <div class="VIDEO_TRASER">
+                <video id="Reproducio_Video" poster="/Multimedias/Otros/portada.jpg" src="/Multimedias/Otros/A surreal anime concert battle. The woman conducts the air, and digital musical notes explode like weapons. Reality bends, colors distort, the glass floor cracks with each vibration. Three resista.mp4" ></video>
+                <button id="button_Video" onclick="toggleVideo()" class="Reproducio_Video">
+                    <div>
+                        <i class='bx bx-play' id="Play"></i>
+                        <i class='bx bx-pause' id="Pause" style="display: none;"></i>
+                    </div>
+                </button>
+            </div>
+        </div>   
+    </section>
+    <section id="BODY_HOME_GALERY">
+        <div class="FONDO_GALERY">
+            <div class="GALERY_LIST">
+                <!-- Botón Izquierda -->
+                <button class="BUTTON_GALERY" id="BUTTON_GALERYL">
+                    <i class='bx bx-left-arrow-circle'></i>
+                </button>
+
+                <!-- Contenedor de Opciones de Galería -->
+                <div class="GALERYL_OPTION" id="GALERY_OPTION">
+                    <div>
+                        <img src="/Multimedias/Kaen Kurogami/Kaen Kurogami (11).jpg" onclick="Galery()" id="Personaje1" alt="">
+                        <img src="/Multimedias/Lucen Odayama/Lucen Odayama (7).jpg" onclick="Galery()" id="Personaje2"  alt="">
+                        <img src="/Multimedias/Nara Kageyama/Nara Kageyama (5).jpg" onclick="Galery()" id="Personaje3"  alt="">
+                        <img src="/Multimedias/Laila Yumekiri/Laila Yumekiri (10).jpg" onclick="Galery()" id="Personaje5"  alt="">
+                    </div>
+                    <div>
+                        <img src="/Multimedias/Kaito Senzoku/Kaito Senzoku (8).jpg" onclick="Galery()" id="Personaje6"  alt="">
+                        <img src="/Multimedias/Renji Akebono/Renji Akebono (8).jpg" onclick="Galery()" id="Personaje7"  alt="">
+                        <img src="/Multimedias/Shiori/Shiori (9).jpg" onclick="Galery()" id="Personaje8"  alt="">
+                        <img src="/Multimedias/Dr. Maikō Nibuken/Dr. Maikō Nibuken (6).jpg" onclick="Galery()" id="Personaje4"  alt="">
+                    </div>
+                </div>
+
+                <!-- Botón Derecha -->
+                <button class="BUTTON_GALERY" id="BUTTON_GALERYR">
+                    <i class='bx bx-right-arrow-circle'></i>
+                </button>
+            </div>
+            <div class="GALERY" >
+                <div class="GALERY_LEFT">
+                    <div class="DIV_GALERY"><img src="/Multimedias/Laila Yumekiri/Laila Yumekiri (1).jpg" id="GALERY_CONTENEDOR0" alt=""></div>
+                </div>
+                <div class="GALERY_RIGTH">
+                    <div class="DIV_GALERY"><img src="/Multimedias/Laila Yumekiri/Laila Yumekiri (2).jpg" onclick="activarIntercambioImagenesRapido()" id="GALERY_CONTENEDOR1" alt=""></div>
+                    <div class="DIV_GALERY"><img src="/Multimedias/Laila Yumekiri/Laila Yumekiri (3).jpg" onclick="activarIntercambioImagenesRapido()" id="GALERY_CONTENEDOR2" alt=""></div>
+                    <div class="DIV_GALERY"><img src="/Multimedias/Laila Yumekiri/Laila Yumekiri (4).jpg" onclick="activarIntercambioImagenesRapido()" id="GALERY_CONTENEDOR3" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section id="BODY_HOME_PARENERS">
+        <div class="carousel-container">
+            <div class="carousel"  id="logoCarousel">
+                <img src="/Multimedias/Logos/download.png" alt="">
+                <img src="/Multimedias/Logos/Group 6 (1).png" alt="">
+                <img src="/Multimedias/Logos/Group 75.png" alt="">
+                <img src="/Multimedias/Logos/Group 6 (1).png" alt="">
+                <img src="/Multimedias/Logos/download.png" alt="">
+                <img src="/Multimedias/Logos/Group 75.png" alt="">
+                <img src="/Multimedias/Logos/download.png" alt="">
+                <img src="/Multimedias/Logos/Group 6 (1).png" alt="">
+                <img src="/Multimedias/Logos/Group 75.png" alt="">
+                <img src="/Multimedias/Logos/Group 6 (1).png" alt="">
+                <img src="/Multimedias/Logos/download.png" alt="">
+                <img src="/Multimedias/Logos/Group 75.png" alt="">
+            </div>
+        </div>
+    </section>
+    <footer id="BODY_HOME_FOTTER">
+        <div>
+            <div class="foote_Secion_Log">
+                <a href=""><img src="/Multimedias/Logos/Group 75.png" alt=""></a>
+                <div><a href="#"><i class='bx bxl-instagram-alt'></i></a><a href="#"><i class='bx bxl-facebook-square' ></i></a><a href="#"><i class='bx bxl-twitter' ></i></a><a href="#"><i class='bx bxl-tiktok' ></i></a></div>
+            </div>
+            <div class="foote_Secion_Cont">
+                <ul>
+                    <h3>Contactos</h3>
+                    <li>Gmail: <a href="">AnimeStud@Gmail.co</a></li>
+                    <li>Gmail: <a href="">Resonance@Gmail.co</a></li>
+                    <li>Tel: <a href="">+81 90-4567-8910</a></li>
+                    <li>Dir: Cl. 79 #42F-110, Nte. Centro Historico, Barranquilla, Atlántico</li>
+                </ul>
+            </div>
+            <div  class="foote_Secion"><iframe class="Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.582068183466!2d-74.8163543251398!3d10.99488498916747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d0f33f9d46d%3A0x4058b351ff3e4d61!2sCorporacion%20Educativa%20del%20Litoral!5e0!3m2!1sen!2sco!4v1749766940146!5m2!1sen!2sco" ></iframe>
+        </div>
+    </footer>
+    <!-- Script JavaScript principal -->
+    <script src="/Proyecto/Js/Header.js" defer></script>
+    <script src="/Proyecto/Js/Home.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+#BODY_HOME_GALERY {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/Multimedias/Fondos/Frame\ 9\ \(1\).png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6); /* Sombra inferior */
+}
+
+/* ================= FONDO DE GALERÍA ================= */
+.FONDO_GALERY {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* ================= CONTENEDOR PRINCIPAL DE LA GALERÍA ================= */
+.GALERY_LIST {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1000px;
+  height: 15vh;
+  padding: 0 1rem;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+
+  animation: flotar 3s ease-in-out infinite;
+  cursor: pointer;
+}
+
+/* ================= BOTONES DE NAVEGACIÓN ================= */
+.BUTTON_GALERY {
+  width: 5rem;
+  height: 5rem;
+  background: none;
+  border: none;
+  color: var(--Color-2);
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.BUTTON_GALERY:hover {
+  background: linear-gradient(270deg, var(--Color-4), var(--Color-5), var(--Color-4));
+  background-size: 300% 600%;
+  animation: animarGradient 6s ease infinite;
+}
+
+.BUTTON_GALERY i {
+  font-size: 2rem;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.BUTTON_GALERY:hover i {
+  transform: scale(1.1);
+}
+
+/* ================= CARRIL DE IMÁGENES ================= */
+.GALERYL_OPTION {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
+}
+
+.GALERYL_OPTION::-webkit-scrollbar {
+  display: none;
+}
+
+.GALERYL_OPTION > * {
+  flex: 0 0 auto;
+}
+
+/* ================= GRUPOS DE IMÁGENES ================= */
+.GALERYL_OPTION div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  scroll-snap-align: start;
+  gap: 1rem;
+}
+
+/* ================= IMÁGENES ================= */
+.GALERYL_OPTION img {
+  width: 90px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid var(--Color-2);
+  object-fit: cover;
+  filter: grayscale(70%);
+  transition: 1.0s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: scale(0.80);
+}
+
+.GALERYL_OPTION img:hover {
+    filter: grayscale(0%);
+    transform: scale(0.9);
+}
+
+
+.GALERY{
+  display: flex;
+  width: 65%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  
+  animation: flotar 3s ease-in-out infinite;
+  cursor: pointer;
+}
+.GALERY_LEFT{
+  display: flex;
+  width: 80%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.GALERY_LEFT .DIV_GALERY{
+  height: 100%;
+  margin: 5px;
+}
+
+.GALERY_RIGTH{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 80%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.GALERY_RIGTH .DIV_GALERY{
+  width: auto;
+  height: 100%;
+}
+.GALERY_RIGTH .DIV_GALERY img{
+  width: 100%;
+}
+.DIV_GALERY {
+  display: flex;
+  width: 90%;
+  overflow: hidden;
+  justify-content: center;
+  transform: scale(1.0);
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  border: 2px solid var(--Color-2); 
+  border-radius: 5px;
+  transition: 1.0s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.DIV_GALERY img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: grayscale(20%);
+  transition: 10.0s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.DIV_GALERY:hover{
+  transform: scale(1.02);
+}
+
+.DIV_GALERY:hover img{
+  filter: grayscale(05%);
+}
+
+.DIV_GALERY img.fade-out {
+  opacity: 0.1;
+}
+
+#BODY_HOME_PARENERS {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  align-items: center;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 0;
+  margin: 2rem 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.carousel {
+  display: flex;
+  gap: 5rem;
+  width: max-content;
+}
+
+.carousel img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: 1.0s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.carousel img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 730px) {
+  .GALERYL_OPTION div {
+    gap: 0rem;
+  }
+  .BUTTON_GALERY {
+    width: 3rem;
+    height: 3rem;
+  }
+  .GALERYL_OPTION img {
+    width: 100px;
+    min-width: 50px;
+    border-radius: 5px;
+    filter: grayscale(70%);
+    transform: scale(0.8);
+  }
+  .GALERYL_OPTION img:hover {
+    transform: scale(0.85);
+  }
+  .GALERY{
+    flex-direction: column;
+  }
+  .GALERY_LEFT{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  .GALERY_LEFT .DIV_GALERY{
+    width: 100%;
+    height: 80%;
+    margin: 5px;
+  }
+
+  .GALERY_RIGTH{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+  }
+  .GALERY_RIGTH .DIV_GALERY{
+    width: 100%;
+    height: auto;
+  }
+  .GALERY_RIGTH .DIV_GALERY img{
+    width: 100%;
+  }
+  .DIV_GALERY {
+    display: flex;
+    width: 90%;
+    overflow: hidden;
+    justify-content: center;
+    transform: scale(1.0);
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    border: 2px solid var(--Color-2); 
+    border-radius: 5px;
+    transition: 1.0s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .DIV_GALERY img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: grayscale(20%);
+    transition: 10.0s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
